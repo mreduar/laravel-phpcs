@@ -19,7 +19,8 @@ composer require mreduar/laravel-phpcs --dev
 **[*]** Install manually
 
 1. Copy the `phpcs.xml` file into your project root.
-2. Run `phpcs ./` to check your project.
+2. Descoment lines `<file>app</file>` and the others in `phpcs.xml` file.
+3. Run `phpcs .` to check your project.
 
 ## Usage
 
