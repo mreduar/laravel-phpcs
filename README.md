@@ -54,6 +54,14 @@ using the new ruleset.
 `vendor/bin/phpcs`
 `vendor/bin/phpcbf`
 
+#### Sniffing code in PHPStorm
+
+See [PHP Code Sniffer in PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm) on how to set up CodeSniffer in PHPStorm.
+
+#### Sniffing code Visual Studio Code
+
+See [PHP Sniffer by wongjn](https://marketplace.visualstudio.com/items?itemName=wongjn.php-sniffer) or other [phpcs](https://marketplace.visualstudio.com/search?term=phpcs&target=VSCode&category=All%20categories&sortBy=Relevance) plugins for more information about PHP Code Sniffer in Visual Studio Code.
+
 --------------------------------------------------------------------------------
 
 
