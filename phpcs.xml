@@ -12,6 +12,7 @@
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
     <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
         <exclude-pattern>/app/Http/Resources/*\.php</exclude-pattern>
+        <exclude-pattern>/routes/*\.php</exclude-pattern>
     </rule>
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
     <rule ref="Generic.Commenting.DocComment">
