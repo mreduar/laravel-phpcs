@@ -13,8 +13,12 @@ class LaravelPhpcsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../phpcs.xml.stub' => base_path('phpcs.xml'),
+                __DIR__.'/../resources/stubs/phpcs.xml.stub' => base_path('phpcs.xml'),
             ], 'ruleset');
+
+            $this->publishes([
+                __DIR__.'/../resources/stubs/pre-commit-hook.stub' => base_path('.git/hooks/pre-commit'),
+            ], 'hook');
         }
     }
 }

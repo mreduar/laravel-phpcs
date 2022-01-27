@@ -28,7 +28,7 @@ composer require mreduar/laravel-phpcs --dev
 
 > Only neccesary if you installed as a package using composer!
 
-`php artisan vendor:publish --provider="Mreduar\LaravelPhpcs\LaravelPhpcsServiceProvider"`
+`php artisan vendor:publish --provider="Mreduar\LaravelPhpcs\LaravelPhpcsServiceProvider" --tag="ruleset"`
 
 This will publish to your root directory the following file
 
@@ -46,6 +46,23 @@ This will publish to your root directory the following file
     <rule ref="./vendor/mreduar/laravel-phpcs/phpcs.xml"/>
 </ruleset>
 ```
+
+Optionally you can also publish a git hook that will help you to never overlook smelly code.
+
+`php artisan vendor:publish --provider="Mreduar\LaravelPhpcs\LaravelPhpcsServiceProvider" --tag="hook"`
+
+The file will be published in its root directory `.git/hooks/pre-commit`
+So every time you try to commit `phpcs` will first check that you have everything correct.
+
+```bash
+$ git commit -m "test"
+[1/1] code sniffer        OK!
+[master a6133d7] test
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+if you have any errors the commit will be cancelled.
+
 
 ### Sniffing code
 Use php CodeSniffer commands, pointed towards your xml file, to sniff the code
