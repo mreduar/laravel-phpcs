@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.3.0 - 2022-02-12
+
+- Deleted illuminate/support dependency to make the package compatible with any version of Laravel
+
 ## 1.2.0 - 2022-01-27
 
 - Added optional git pre-hook to validate with phpcs before every commit.
