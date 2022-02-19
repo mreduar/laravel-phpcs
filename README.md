@@ -5,10 +5,6 @@
 
 [php codesniffer](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset) ruleset for laravel or any oher php projects.
 
-## Requirements
-
-- PHP 7.3 or higher, as Laravel 8.x is using ^7.3|^8.0
-
 ## Installation
 **[*]** Install using composer
 
