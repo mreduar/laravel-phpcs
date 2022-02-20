@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.3.1 - 2022-02-20
+
+- Now the Providers code is checked
+
 ## 1.3.0 - 2022-02-12
 
 - Deleted illuminate/support dependency to make the package compatible with any version of Laravel

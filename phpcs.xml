@@ -158,7 +158,6 @@
     <exclude-pattern>*/Console/Kernel.php</exclude-pattern>
     <exclude-pattern>*/Exceptions/Handler.php</exclude-pattern>
     <exclude-pattern>*/Http/Kernel.php</exclude-pattern>
-    <exclude-pattern>*/Providers/*</exclude-pattern>
 
     <arg name="colors"/>
     <arg value="spv"/>
