@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.4.0 - 2022-03-15
+
+- Added rule to prefer single quotation marks
+
 ## 1.3.1 - 2022-02-20
 
 - Now the Providers code is checked
