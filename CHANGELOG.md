@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.5.0 - 2022-04-05
+
+- Added `Generic.NamingConventions.CamelCapsFunctionName` to avoid function names with `snake_case`
+- Added new rule `Generic.Formatting.SpaceAfterNot`
+
 ## 1.4.0 - 2022-03-15
 
 - Added rule to prefer single quotation marks
