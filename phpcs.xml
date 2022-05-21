@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Laravel Standards">
+<ruleset name="Laravel Standards" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
     <description>PHP Codesniffer ruleset to follow Laravel's coding style</description>
     <rule ref="Generic.Classes.DuplicateClassName">
         <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedIf"/>
@@ -136,6 +136,49 @@
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
     <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
     <rule ref="Zend.Files.ClosingTag"/>
+
+    <!-- Custom Sniffs -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+		<properties>
+			<property name="searchAnnotations" value="true"/>
+		</properties>
+	</rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
+		<properties>
+			<property name="caseSensitive" value="true"/>
+		</properties>
+	</rule>
+    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
+    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
+    <rule ref="SlevomatCodingStandard.Classes.MethodSpacing">
+        <properties>
+            <property name="minLinesCount" value="1"/>
+            <property name="maxLinesCount" value="1"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration">
+        <properties>
+            <property name="spacesCountAfterKeyword" value="1"/>
+            <property name="spacesCountBeforeArrow" value="1"/>
+            <property name="spacesCountAfterArrow" value="1"/>
+            <property name="allowMultiLine" value="true"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+        <properties>
+            <property name="rootNamespaces" type="array">
+                <element key="app" value="App"/>
+                <element key="database/factories" value="Database\Factories"/>
+                <element key="database/seeders" value="Database\Seeders"/>
+                <element key="tests" value="Tests"/>
+            </property>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+        <exclude-pattern>/database/schema/*</exclude-pattern>
+        <exclude-pattern>/database/migrations/*</exclude-pattern>
+    </rule>
 
     <!-- <file>app</file>
     <file>config</file>

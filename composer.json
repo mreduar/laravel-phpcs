@@ -7,6 +7,7 @@
         "phpcs",
         "php",
         "coding-style",
+        "coding sniffer",
         "coding-standard"
     ],
     "homepage": "https://github.com/mreduar/laravel-phpcs",
@@ -21,6 +22,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
+        "slevomat/coding-standard": "^7.2",
         "squizlabs/php_codesniffer": "^3.6"
     },
     "autoload": {
@@ -29,7 +31,10 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "extra": {
         "laravel": {

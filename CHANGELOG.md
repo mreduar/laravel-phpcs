@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.6.0 - 2022-05-20
+
+- [Custom sniffs](https://github.com/slevomat/coding-standard) have been added to improve the Laravel standard.
+- Added `SlevomatCodingStandard.Namespaces.UnusedUses` to avoid unused uses.
+- Added `SlevomatCodingStandard.Namespaces.UseFromSameNamespace` to avoid uses from same namespace.
+- Added `SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses` for the imports to be sorted alphabetically.
+- Added `SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation` to enforces fully qualified names of classes and interfaces in phpDocs.
+- Added `SlevomatCodingStandard.PHP.UselessSemicolon` to avoid useless semicolons.
+- Added `SlevomatCodingStandard.Classes.MethodSpacing` to check that there is a blank line between the methods.
+- Added `SlevomatCodingStandard.Functions.ArrowFunctionDeclaration` to check that the number of spaces after and before the arrow is correct.
+- Added `SlevomatCodingStandard.Files.TypeNameMatchesFileName` to check that the type name matches the file name.
+
 ## 1.5.0 - 2022-04-05
 
 - Added `Generic.NamingConventions.CamelCapsFunctionName` to avoid function names with `snake_case`
