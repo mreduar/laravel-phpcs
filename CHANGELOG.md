@@ -2,6 +2,11 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.7.0 - 2022-06-13
+- Added support to enums.
+- Updated php_codesniffer to 3.7.
+- Updated slevomat/coding-standard to dev-php81 to support enums.
+
 ## 1.6.0 - 2022-05-20
 
 - [Custom sniffs](https://github.com/slevomat/coding-standard) have been added to improve the Laravel standard.

@@ -22,8 +22,8 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "slevomat/coding-standard": "^7.2",
-        "squizlabs/php_codesniffer": "^3.6"
+        "slevomat/coding-standard": "dev-php81",
+        "squizlabs/php_codesniffer": "^3.7"
     },
     "autoload": {
         "psr-4": {
