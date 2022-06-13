@@ -16,7 +16,9 @@ composer require mreduar/laravel-phpcs --dev
 
 1. Copy the `phpcs.xml` file into your project root.
 2. Descoment lines `<file>app</file>` and the others in `phpcs.xml` file.
-3. Run `phpcs .` to check your project.
+3. Because this package uses third party standards that are not in phpcs you need to install these package.
+   1. `composer require slevomat/coding-standard`
+4. Run `phpcs .` to check your project.
 
 ## Usage
 
@@ -83,7 +85,7 @@ See [PHP Sniffer by wongjn](https://marketplace.visualstudio.com/items?itemName=
 All changes that makes the sniffer more accurate towards _Laravel_'s coding standard
 is always highly appreciated and welcome.
 
-Please see [CONTRIBUTING](docs/CONTRIBUTING.md) for more details.
+Please see [CONTRIBUTING](CONTRIBUTING.md) for more details.
 
 ## Credits
 
