@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "slevomat/coding-standard": "dev-php81",
+        "slevomat/coding-standard": "^8.0",
         "squizlabs/php_codesniffer": "^3.7"
     },
     "autoload": {

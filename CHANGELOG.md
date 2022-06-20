@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.7.1 - 2022-06-20
+- Updated slevomat/coding-standard to estable version.
+
 ## 1.7.0 - 2022-06-13
 - Added support to enums.
 - Updated php_codesniffer to 3.7.
