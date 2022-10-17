@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.7.2 - 2022-10-17
+- Multiple parameters are now supported on the same line in multi-line functions.
+
 ## 1.7.1 - 2022-06-20
 - Updated slevomat/coding-standard to estable version.
 
