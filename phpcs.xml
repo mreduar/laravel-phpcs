@@ -138,6 +138,7 @@
     <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
     <rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired"/>
+    <rule ref="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
     <rule ref="Zend.Files.ClosingTag"/>
 
     <!-- Custom Sniffs -->

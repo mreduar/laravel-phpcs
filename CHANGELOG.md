@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.8.0 - 2022-10-20
+- Added rule to disallow the use of variables without camel case.
+
 ## 1.7.2 - 2022-10-17
 - Multiple parameters are now supported on the same line in multi-line functions.
 
