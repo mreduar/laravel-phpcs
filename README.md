@@ -3,7 +3,7 @@
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![PR friendly repository](https://img.shields.io/badge/Pull--Request-are%20welcome!-ff69b4)](/compare)
 
-[php codesniffer](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset) ruleset for laravel or any oher php projects.
+[php codesniffer](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset) ruleset for laravel or any other php projects.
 
 ## Installation
 **[*]** Install using composer
