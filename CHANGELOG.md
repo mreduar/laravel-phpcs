@@ -2,6 +2,9 @@
 
 All notable changes to `laravel-phpcs` will be documented in this file
 
+## 1.8.1 - 2022-11-02
+- Modified rule to allow empty catches.
+
 ## 1.8.0 - 2022-10-20
 - Added rule to disallow the use of variables without camel case.
 

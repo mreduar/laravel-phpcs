@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <ruleset name="Laravel Standards" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
     <description>PHP Codesniffer ruleset to follow Laravel's coding style</description>
-    <rule ref="Generic.Classes.DuplicateClassName">
-        <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedIf"/>
+    <rule ref="Generic.Classes.DuplicateClassName" />
+    <rule ref="Generic.CodeAnalysis.EmptyStatement">
+        <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCatch"/>
     </rule>
-    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
     <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
     <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
     <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
@@ -13,6 +13,7 @@
     <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
         <exclude-pattern>/app/Http/Resources/*\.php</exclude-pattern>
         <exclude-pattern>/routes/*\.php</exclude-pattern>
+        <severity>0</severity>
     </rule>
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
     <rule ref="Generic.Commenting.DocComment">
